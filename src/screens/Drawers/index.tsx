@@ -16,7 +16,6 @@ function DrawerContent() {
 
 export default function Drawers() {
 
-
     return (
         <Drawer.Navigator
         screenOptions={{
@@ -28,7 +27,7 @@ export default function Drawers() {
         >
             <Drawer.Screen 
             name="FrontPage" 
-            component={FrontPage}                         
+            component={FrontPage}  
             />
         </Drawer.Navigator>
     )

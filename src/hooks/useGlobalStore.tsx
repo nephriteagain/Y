@@ -5,12 +5,10 @@ type State = {
 }
 
 type Actions = {
-    openDrawer() : void;
-    closeDrawer() : void;
+    toggleDrawer() : void
 }
 
 export const useGlobalStore = create<State & Actions>((set) => ({
     drawerIsOpen: false,
-    openDrawer: () => set(() => ({ drawerIsOpen: false })),
-    closeDrawer: () => set(() => ({ drawerIsOpen: true })),
+    toggleDrawer: () => set(state => ({drawerIsOpen: !state.drawerIsOpen}))
 }))
