@@ -1,6 +1,7 @@
 
-export type RootParamList = {
+export type FrontPageParamList = {
     Main: undefined;
+    TimelineSettings: undefined;
 }
 
 export type HomeTopTabParamList = {
@@ -14,4 +15,8 @@ export type BottomTabParamList = {
     Communities: undefined;
     Notifications: undefined;
     Messages: undefined;
+}
+
+export type RootParamList = {
+    FrontPage: undefined;
 }

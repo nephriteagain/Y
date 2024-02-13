@@ -1,2 +1,2 @@
 export { default } from "./Main"
-export { homeOptions } from './homeOptions'
+export { mainOptions } from './mainOptions'

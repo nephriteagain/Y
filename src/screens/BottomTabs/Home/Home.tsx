@@ -8,9 +8,28 @@ const TopTab = createMaterialTopTabNavigator<HomeTopTabParamList>()
 
 export default function Home() {
     return (
-        <TopTab.Navigator>
-            <TopTab.Screen name="ForYou" component={ForYou} />
-            <TopTab.Screen name="Following" component={Following} />
+        <TopTab.Navigator
+        screenOptions={{
+            tabBarLabelStyle: {
+                fontWeight: 'bold',
+                fontSize: 14,
+            }
+        }}
+        >
+            <TopTab.Screen 
+            name="ForYou" 
+            component={ForYou} 
+            options={{
+                tabBarLabel: 'For You'
+            }} 
+            />
+            <TopTab.Screen 
+            name="Following" 
+            component={Following} 
+            options={{
+                tabBarLabel: 'Following'
+            }} 
+            />
         </TopTab.Navigator>
     )
 }
