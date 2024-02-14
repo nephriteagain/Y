@@ -34,3 +34,18 @@ export type RootParamList = {
     Spaces: undefined;
     Monetization: undefined;
 }
+
+/**@description incomplete */
+export type Post = {
+    id: string
+    displayName: string;
+    userName: string;
+    date: string; // fix this in the faker
+    post: string;
+    engagements: {
+        reply: number;
+        retweet: number;
+        likes: number;
+        views: number;
+    }
+}
