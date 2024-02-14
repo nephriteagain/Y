@@ -1,8 +1,7 @@
 import { createNativeStackNavigator, } from "@react-navigation/native-stack";
 import type { FrontPageParamList } from "../../../types";
-import { DrawerActions } from "@react-navigation/native";
-import { useNavigation } from "@react-navigation/native";
-
+import { DrawerActions, useNavigation } from "@react-navigation/native";
+import { Text, View } from "react-native";
 
 import Main from "../../Stacks/Main";
 import TimelineSettings from "../../Stacks/TimelineSettings";
@@ -32,10 +31,48 @@ export default function FrontPage() {
             >
                 {(props) => <Main {...props} toggleDrawer={toggleDrawer} />}
             </Stack.Screen>
-            <Stack.Screen name="TimelineSettings" component={TimelineSettings} options={{title: 'Timeline Settings'}} />
-            <Stack.Screen name="ExploreSettings" component={ExploreSettings} options={{title: 'Explore Settings'}} />
-            <Stack.Screen name="NotificationSettings" component={NotificationSettings} options={{title: 'Notification Settings'}} />
-            <Stack.Screen name="MessagesSettings" component={MessagesSettings} options={{title: 'Messages Settings'}} />
+            <Stack.Screen 
+            name="TimelineSettings" 
+            component={TimelineSettings} 
+            options={{title: 'Timeline Settings'}} 
+            />
+            <Stack.Screen 
+            name="ExploreSettings" 
+            component={ExploreSettings} 
+            options={{
+                headerTitle: () => (
+                    <View>
+                        <Text className="text-lg font-bold">Explore Settings</Text>
+                        <Text className="text-sm opacity-70" >@nephriteagain</Text>
+                    </View>
+                )
+            }}
+            
+            />
+            <Stack.Screen 
+            name="NotificationSettings" 
+            component={NotificationSettings} 
+            options={{
+                headerTitle: () => (
+                    <View>
+                        <Text className="text-lg font-bold">Notifications</Text>
+                        <Text className="text-sm opacity-70" >@nephriteagain</Text>
+                    </View>
+                )
+            }}
+            />
+            <Stack.Screen 
+            name="MessagesSettings" 
+            component={MessagesSettings} 
+            options={{
+                headerTitle: () => (
+                    <View>
+                        <Text className="text-lg font-bold">Messages settings</Text>
+                        <Text className="text-sm opacity-70" >@nephriteagain</Text>
+                    </View>
+                )
+            }}
+            />
         </Stack.Navigator>
     )
 }
