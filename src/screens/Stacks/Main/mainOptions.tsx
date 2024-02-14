@@ -1,7 +1,7 @@
 import { NativeStackNavigationOptions } from "@react-navigation/native-stack";
 import { View, Text } from "react-native";
-import { Feather } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 import { Link } from "@react-navigation/native";
 
 export const mainOptions : NativeStackNavigationOptions  = {

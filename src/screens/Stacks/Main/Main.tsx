@@ -3,7 +3,6 @@ import { FrontPageParamList } from "../../../types";
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 
 import BottomTabs from "../../BottomTabs";
-import { useGlobalStore } from "../../../hooks/useGlobalStore";
 import { useEffect } from "react";
 import { FontAwesome } from '@expo/vector-icons';
 

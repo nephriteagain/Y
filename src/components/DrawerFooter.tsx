@@ -51,7 +51,7 @@ export default function DrawerFooter() {
                     />
                 </List.Accordion>
             </List.Section>
-            <View className="fixed bottom-0 left-4 w-full b-white z-10 ">
+            <View className="fixed bottom-1 left-4 w-full b-white z-10 ">
                 {
                     theme === 'day' ?
                     <Ionicons name="sunny-outline" size={32} color="black" /> :

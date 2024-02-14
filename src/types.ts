@@ -9,6 +9,12 @@ export type HomeTopTabParamList = {
     Following: undefined;
 }
 
+export type NotificationsTopTabParamList = {
+    All: undefined;
+    Verified: undefined;
+    Mentions: undefined;
+}
+
 export type BottomTabParamList = {
     Home: undefined;
     Search: undefined;
