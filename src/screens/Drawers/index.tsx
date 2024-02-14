@@ -28,7 +28,7 @@ const Drawer = createDrawerNavigator<RootParamList>()
 
 function DrawerContent(props:DrawerContentComponentProps) {        
     return (
-        <DrawerContentScrollView {...props} contentContainerStyle={{height: '100%',}}>
+        <DrawerContentScrollView {...props} contentContainerStyle={{}}>
             <DrawerHeader />
             <View className="mb-auto">
                 <DrawerItemList {...props}/>
