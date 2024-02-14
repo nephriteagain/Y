@@ -13,8 +13,7 @@ type MainProps = NativeStackScreenProps<FrontPageParamList> & {
     toggleDrawer() : void
 }
 
-export default function Main({toggleDrawer, navigation}: MainProps) {    
-
+export default function Main({toggleDrawer, navigation, route}: MainProps) {
     useEffect(() => {
         navigation.setOptions({
             headerLeft: () => (

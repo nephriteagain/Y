@@ -17,13 +17,14 @@ const BottomTab = createBottomTabNavigator<BottomTabParamList>()
 export default function BottomTabs() {
     return (
         <BottomTab.Navigator screenOptions={{
-            tabBarShowLabel: false
+            tabBarShowLabel: false,
+            headerShown: false,
+            tabBarHideOnKeyboard: true
         }}>
             <BottomTab.Screen
             name="Home" 
             component={Home} 
             options={{
-                headerShown: false,                
                 tabBarIcon: () => (<MaterialIcons name="home-filled" size={24} color="black" />),
             }}                         
             />

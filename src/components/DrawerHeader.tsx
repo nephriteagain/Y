@@ -5,9 +5,9 @@ import { Entypo } from '@expo/vector-icons';
 export default function DrawerHeader() {
 
     return (
-        <View className='relative gap-y-2 px-4'>
-            <FontAwesome name="user-circle-o" size={32} color="black" />
-            <View className='absolute top-2 right-2'>
+        <View className='relative gap-y-2 px-4 pt-8'>
+            <FontAwesome name="user-circle-o" size={42} color="black" />
+            <View className='absolute top-8 right-2'>
                 <Entypo name="dots-three-vertical" size={16} color="black" />
             </View>
             <View>

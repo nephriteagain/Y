@@ -6,12 +6,8 @@ import { Link } from "@react-navigation/native";
 
 export const mainOptions : NativeStackNavigationOptions  = {
     headerTitle: () => (<View><Text className="font-bold text-2xl">Y</Text></View>),
-    headerLeft: () => (
-        <>
-        <FontAwesome name="user-circle-o" size={32} color="black" />
-        </>
-    ),
+    headerLeft: () => (<FontAwesome name="user-circle-o" size={32} color="black" />),
     headerRight: () => (<Link to={{screen: 'TimelineSettings'}}><Feather name="settings" size={24} color="black" /></Link>),
     headerTitleAlign: 'center',
-    headerShadowVisible: false
+    headerShadowVisible: false    
 }   

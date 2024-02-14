@@ -48,14 +48,14 @@ export default function Drawers() {
                 fontSize: 20,
                 fontWeight: '900'
             },
-            drawerActiveTintColor: 'black'
+            drawerActiveTintColor: 'black',
         }}
         initialRouteName="FrontPage"
         drawerContent={DrawerContent}                
         >
             <Drawer.Screen 
             name="FrontPage" 
-            component={FrontPage}        
+            component={FrontPage}
             // this hides the navbar button
             options={{
                 headerShown: false,
