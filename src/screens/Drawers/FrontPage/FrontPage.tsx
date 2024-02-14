@@ -1,7 +1,7 @@
 import { createNativeStackNavigator, } from "@react-navigation/native-stack";
 import type { FrontPageParamList } from "../../../types";
 import { DrawerActions, useNavigation } from "@react-navigation/native";
-import { Text, View } from "react-native";
+import { Text, View, } from "react-native";
 
 import Main from "../../Stacks/Main";
 import TimelineSettings from "../../Stacks/TimelineSettings";
@@ -15,12 +15,14 @@ const Stack = createNativeStackNavigator<FrontPageParamList>()
 
 
 export default function FrontPage() {
+
     const navigation = useNavigation()
     function toggleDrawer() {
         navigation.dispatch(DrawerActions.toggleDrawer())    
     }
 
     return (
+        <>
         <Stack.Navigator screenOptions={{animation: 'slide_from_right'}}>
             <Stack.Screen 
             name="Main" 
@@ -74,5 +76,6 @@ export default function FrontPage() {
             }}
             />
         </Stack.Navigator>
+        </>
     )
 }
