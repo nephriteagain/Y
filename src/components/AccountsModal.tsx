@@ -8,7 +8,7 @@ export default function AccountsModal() {
 
     return (
         <Modal 
-        visible={!isAccountsModalShow}
+        visible={isAccountsModalShow}
         animationType="slide"
         >
             <Pressable onPress={toggleAccountsModal}>                

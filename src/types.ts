@@ -49,3 +49,12 @@ export type Post = {
         views: number;
     }
 }
+
+/**@description incomplete */
+export type Message = {
+    id: string;
+    displayName: string;
+    userName: string;
+    date: string;
+    message: string;
+}
