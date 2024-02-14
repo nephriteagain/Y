@@ -17,7 +17,7 @@ export default function Search() {
                 className="bg-gray-200 px-4 py-1 w-[75%] rounded-xl border border-gray-300" 
                 />
             ),
-            headerRight: () => (<Link to={{screen: 'TimelineSettings'}}><Feather name="settings" size={24} color="black" /></Link>),
+            headerRight: () => (<Link to={{screen: 'ExploreSettings'}}><Feather name="settings" size={24} color="black" /></Link>),
             headerTitleAlign: 'center'            
         })
     })

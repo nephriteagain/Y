@@ -24,7 +24,7 @@ export default function Notifications() {
                     <Text className="text-xl font-bold">Notifications</Text>    
                 </View>
             ),
-            headerRight: () => (<Link to={{screen: 'TimelineSettings'}}><Feather name="settings" size={24} color="black" /></Link>),
+            headerRight: () => (<Link to={{screen: 'NotificationSettings'}}><Feather name="settings" size={24} color="black" /></Link>),
             headerTitleAlign: 'center'
         })
     })

@@ -2,6 +2,9 @@
 export type FrontPageParamList = {
     Main: undefined;
     TimelineSettings: undefined;
+    ExploreSettings: undefined;
+    NotificationSettings: undefined;
+    MessagesSettings: undefined;
 }
 
 export type HomeTopTabParamList = {

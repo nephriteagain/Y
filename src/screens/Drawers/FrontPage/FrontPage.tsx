@@ -1,9 +1,14 @@
 import { createNativeStackNavigator, } from "@react-navigation/native-stack";
 import type { FrontPageParamList } from "../../../types";
-import Main from "../../Stacks/Main";
-import TimelineSettings from "../../Stacks/TimelineSettings";
 import { DrawerActions } from "@react-navigation/native";
 import { useNavigation } from "@react-navigation/native";
+
+
+import Main from "../../Stacks/Main";
+import TimelineSettings from "../../Stacks/TimelineSettings";
+import ExploreSettings from "../../Stacks/ExploreSettings";
+import NotificationSettings from "../../Stacks/NotificationSettings";
+import MessagesSettings from "../../Stacks/MessagesSettings";
 
 import { FontAwesome } from '@expo/vector-icons';
 
@@ -27,7 +32,10 @@ export default function FrontPage() {
             >
                 {(props) => <Main {...props} toggleDrawer={toggleDrawer} />}
             </Stack.Screen>
-            <Stack.Screen name="TimelineSettings" component={TimelineSettings} />
+            <Stack.Screen name="TimelineSettings" component={TimelineSettings} options={{title: 'Timeline Settings'}} />
+            <Stack.Screen name="ExploreSettings" component={ExploreSettings} options={{title: 'Explore Settings'}} />
+            <Stack.Screen name="NotificationSettings" component={NotificationSettings} options={{title: 'Notification Settings'}} />
+            <Stack.Screen name="MessagesSettings" component={MessagesSettings} options={{title: 'Messages Settings'}} />
         </Stack.Navigator>
     )
 }
