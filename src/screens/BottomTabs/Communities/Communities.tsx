@@ -9,6 +9,7 @@ import { Entypo } from '@expo/vector-icons';
 
 import Community from "../../../components/Community";
 import CommunitiesModal from "../../../components/CommunitiesModal";
+import SubscribeModal from "../../../components/SubscribeModal";
 
 const fakeCommunities = Array.from({length:10}, () => ({
     id: faker.string.alphanumeric(5),
@@ -18,7 +19,7 @@ const fakeCommunities = Array.from({length:10}, () => ({
 
 export default function Communities() {
     const navigation = useNavigation()
-    const toggleModal = useModalStore(s => s.toggleCommunitiesModal)
+    const {toggleCommunitiesModal, toggleSubscribeModal} = useModalStore(s => s)
 
     useFocusEffect(() => {
         const parentNav = navigation.getParent();
@@ -31,10 +32,15 @@ export default function Communities() {
                 </View>    
             ),
             headerRight: () => (
-                <View className="flex-row">
-                    <FontAwesome5 name="user-friends" size={24} color="black" />
-                    <Text>+</Text>
-                </View>
+                <>
+                <Pressable onPress={toggleSubscribeModal}>
+                    <View className="flex-row">
+                        <FontAwesome5 name="user-friends" size={24} color="black" />
+                        <Text>+</Text>
+                    </View>
+                </Pressable>
+                <SubscribeModal />
+                </>
             ),
             headerTitleAlign: 'center'
         })
@@ -45,7 +51,7 @@ export default function Communities() {
         <View className="p-4 gap-y-4">
             <View className="flex-row justify-between">
                 <Text className="text-xl font-bold">Discover new Communities</Text>
-                <Pressable onPress={toggleModal}>
+                <Pressable onPress={toggleCommunitiesModal}>
                     <Entypo name="dots-three-vertical" size={16} color="gray" />
                 </Pressable>
             </View>
