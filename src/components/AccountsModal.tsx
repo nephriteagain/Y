@@ -10,6 +10,7 @@ export default function AccountsModal() {
         <Modal 
         visible={isAccountsModalShow}
         animationType="slide"
+        transparent={true}
         >
             <Pressable onPress={toggleAccountsModal}>                
                 <View className="w-full h-full opacity-60 bg-black"/> 
