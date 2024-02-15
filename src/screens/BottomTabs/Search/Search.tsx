@@ -1,8 +1,19 @@
 import { useNavigation } from "@react-navigation/native"
-import { View, Text, TextInput } from "react-native"
+import { TextInput, ScrollView, Pressable, Text, View } from "react-native"
 import { useFocusEffect , Link} from "@react-navigation/native"
+import { faker } from "@faker-js/faker";
 import { Feather } from '@expo/vector-icons';
 
+import SearchResult from "../../../components/SearchResult";
+
+const fakeSearchResult = Array.from({length: 20}, () => {
+    const name = faker.person
+    return {
+        id: faker.string.alphanumeric(5),
+        displayName: name.fullName(),
+        userName: name.firstName()
+    }
+})
 
 export default function Search() {
     const navigation = useNavigation()
@@ -24,8 +35,12 @@ export default function Search() {
 
     
     return (
-        <View>
-            <Text>Search</Text>
+        <View className="p-4">
+            <ScrollView>
+            {fakeSearchResult.map(s => {
+                return <SearchResult key={s.id} {...s} />
+            })}
+            </ScrollView>
         </View>
     )
 }

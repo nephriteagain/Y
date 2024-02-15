@@ -8,8 +8,8 @@ export default function CommunitiesModal() {
     return (
         <Modal
         transparent={true}
-        animationType="fade"
-        visible={!isCommunitiesModalShow}
+        animationType="slide"
+        visible={isCommunitiesModalShow}
         >
             <Pressable onPress={toggleCommunitiesModal}>                
                 <View className="w-full h-full opacity-60 bg-black"/> 
