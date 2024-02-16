@@ -21,8 +21,8 @@ export default function AccountsModal() {
                     <View className="flex-row gap-x-2 items-center">
                         <View className="bg-gray-300 aspect-square rounded-full" style={{width:50}} />
                         <View>
-                            <Text className="font-bold text-lg">nephriteagain</Text>
-                            <Text className="text-gray-600">@nephriteagain</Text>
+                            <Text className="font-bold text-lg">twitteruser</Text>
+                            <Text className="text-gray-600">@twitteruser</Text>
                         </View>
                     </View>                   
                     <AntDesign name="checkcircle" size={16} color="green" />

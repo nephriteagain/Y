@@ -8,17 +8,18 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import type { RootParamList } from "../../types"
 
-import { FontAwesome } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Fontisto } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
+import { FontAwesome6 } from '@expo/vector-icons';
 
 import DrawerHeader from "../../components/DrawerHeader";
 import DrawerFooter from "../../components/DrawerFooter";
 
 import FrontPage from "./FrontPage";
+import Profile from "./Profile";
 import Premium from "./Premium";
 import Bookmarks from "./Bookmarks";
 import Lists from "./Lists";
@@ -72,6 +73,14 @@ export default function Drawers() {
             }}
             />
             <Drawer.Screen
+            name="Profile"
+            component={Profile}
+            options={{
+                drawerIcon: () => <FontAwesome6 name="user" size={24} color="black" />,
+                headerShown: false,
+            }}
+            />
+            <Drawer.Screen
             name="Premium"
             component={Premium}
             options={{
@@ -87,7 +96,6 @@ export default function Drawers() {
                     )
                 },
                 headerLeft: () => <></> // this removes the hamburger icon
-
             }}
             />
             <Drawer.Screen

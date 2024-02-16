@@ -28,6 +28,7 @@ export type BottomTabParamList = {
 
 export type RootParamList = {
     FrontPage: undefined;
+    Profile: undefined;
     Premium: undefined;
     Bookmarks: undefined;
     Lists: undefined;
