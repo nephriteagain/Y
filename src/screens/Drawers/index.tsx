@@ -5,7 +5,7 @@ import {
     DrawerItemList, 
     DrawerContentComponentProps
 } from "@react-navigation/drawer";
-import { useNavigation } from "@react-navigation/native";
+import { DrawerActions, useNavigation } from "@react-navigation/native";
 import type { RootParamList } from "../../types"
 
 import { Feather } from '@expo/vector-icons';
@@ -14,6 +14,7 @@ import { Fontisto } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome6 } from '@expo/vector-icons';
+import { FontAwesome } from '@expo/vector-icons';
 
 import DrawerHeader from "../../components/DrawerHeader";
 import DrawerFooter from "../../components/DrawerFooter";
@@ -42,7 +43,7 @@ function DrawerContent(props:DrawerContentComponentProps) {
 
 export default function Drawers() {
     const nav = useNavigation()
-
+    
     return (
         <Drawer.Navigator
         screenOptions={{
@@ -141,15 +142,16 @@ export default function Drawers() {
                 drawerIcon: () => <Fontisto name="mic" size={24} color="black" />,
                 headerTitle: () => {
                     return (
-                        <View className="flex-row items-center gap-x-6">
-                            <Pressable onPress={() => nav.goBack()}>
-                                <Ionicons name="arrow-back" size={32} color="black" />
-                            </Pressable>
+                        <View className="flex-row items-center gap-x-4">                            
                             <Text className="font-bold" style={{fontSize: 18}}>Spaces</Text>                        
                         </View>
                     )
                 },
-                headerLeft: () => <></> // this removes the hamburger icon
+                headerLeft: () => (
+                    <Pressable onPress={() => nav.dispatch(DrawerActions.toggleDrawer())} className="px-4">
+                        <FontAwesome name="user-circle-o" size={32} color="black" />
+                    </Pressable>
+                )
             }}
             />
             <Drawer.Screen
