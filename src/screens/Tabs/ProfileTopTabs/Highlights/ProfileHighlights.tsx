@@ -1,8 +1,8 @@
 import { ScrollView } from "react-native";
-import { Post } from "../../../../types";
+import { Post } from "@types";
 import { faker } from "@faker-js/faker";
 
-import SinglePost from "../../../../components/Post";
+import SinglePost from "@components/Post";
 const fakePosts : Post[] = Array.from({length: 10}, () => ({
     id: faker.string.alphanumeric(5),
     displayName: faker.person.fullName(),

@@ -1,6 +1,6 @@
 import { Text } from "react-native";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import type { ProfileTopTabParamList } from '../../../types'
+import type { ProfileTopTabParamList } from '@types'
 
 
 import ProfileHighlights from "./Highlights/ProfileHighlights";

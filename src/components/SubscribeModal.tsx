@@ -1,5 +1,5 @@
 import { Modal, Pressable, View, Text } from 'react-native';
-import { useModalStore } from '../hooks/useModalStore';
+import { useModalStore } from '@hooks/useModalStore';
 
 export default function SubscribeModal() {
     const {isSubscribeModalShow, toggleSubscribeModal } = useModalStore(s => s)

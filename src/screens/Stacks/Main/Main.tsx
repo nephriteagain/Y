@@ -1,4 +1,4 @@
-import { FrontPageParamList } from "../../../types";
+import { FrontPageParamList } from "@types";
 
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 

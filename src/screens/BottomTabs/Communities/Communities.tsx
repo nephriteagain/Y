@@ -1,15 +1,15 @@
 import { Text, View, ScrollView, Pressable } from "react-native";
 import { useNavigation, useFocusEffect } from "@react-navigation/native";
-import { useModalStore } from "../../../hooks/useModalStore";
+import { useModalStore } from "@hooks/useModalStore";
 import { faker } from "@faker-js/faker";
 
 import { Feather } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 
-import Community from "../../../components/Community";
-import CommunitiesModal from "../../../components/CommunitiesModal";
-import SubscribeModal from "../../../components/SubscribeModal";
+import Community from "@components/Community";
+import CommunitiesModal from "@components/CommunitiesModal";
+import SubscribeModal from "@components/SubscribeModal";
 
 const fakeCommunities = Array.from({length:10}, () => ({
     id: faker.string.alphanumeric(5),

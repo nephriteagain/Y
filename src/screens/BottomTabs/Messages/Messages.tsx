@@ -1,9 +1,9 @@
 import { View, TextInput, ScrollView } from "react-native"
 import { useNavigation, Link, useFocusEffect } from "@react-navigation/native";
 import { Feather } from '@expo/vector-icons';
-import Message from "../../../components/Message";
+import Message from "@components/Message";
 import { faker } from "@faker-js/faker";
-import type { Message as MessageType } from "../../../types";
+import type { Message as MessageType } from "@types";
 
 const fakeMessages : MessageType[] = Array.from({length:10}, () => ({
     id: faker.string.alphanumeric(5),

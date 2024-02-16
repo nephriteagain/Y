@@ -1,7 +1,7 @@
 import { View, Text, Pressable } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
-import { useModalStore } from '../hooks/useModalStore';
+import { useModalStore } from '@hooks/useModalStore';
 
 import AccountsModal from './AccountsModal';
 

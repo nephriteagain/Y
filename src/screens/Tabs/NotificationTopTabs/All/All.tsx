@@ -1,6 +1,6 @@
 import { View, ScrollView } from "react-native"
 import { faker } from "@faker-js/faker";
-import Notification from "../../../components/Notification";
+import Notification from "@components/Notification";
 
 const fakeNotifications = Array.from({length:10}, () => ({
     id: faker.string.alphanumeric(5),

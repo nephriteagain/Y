@@ -1,5 +1,5 @@
 import { Text, View } from "react-native";
-import ExploreSettingsItems from "../../../components/ExploreSettingsItem";
+import ExploreSettingsItems from "@components/ExploreSettingsItem";
 import { faker } from "@faker-js/faker";
 
 const settings = [

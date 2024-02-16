@@ -4,7 +4,7 @@ import { useFocusEffect , Link} from "@react-navigation/native"
 import { faker } from "@faker-js/faker";
 import { Feather } from '@expo/vector-icons';
 
-import SearchResult from "../../../components/SearchResult";
+import SearchResult from "@components/SearchResult";
 
 const fakeSearchResult = Array.from({length: 20}, () => {
     const name = faker.person

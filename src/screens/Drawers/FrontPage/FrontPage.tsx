@@ -1,5 +1,5 @@
 import { createNativeStackNavigator, } from "@react-navigation/native-stack";
-import type { FrontPageParamList } from "../../../types";
+import type { FrontPageParamList } from "@types";
 import { DrawerActions, useNavigation } from "@react-navigation/native";
 import { Text, View, } from "react-native";
 

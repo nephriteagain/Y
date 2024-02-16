@@ -6,7 +6,7 @@ import {
     DrawerContentComponentProps
 } from "@react-navigation/drawer";
 import { DrawerActions, useNavigation } from "@react-navigation/native";
-import type { RootParamList } from "../../types"
+import type { RootParamList } from "@types"
 
 import { Feather } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';
@@ -16,8 +16,8 @@ import { Ionicons } from '@expo/vector-icons';
 import { FontAwesome6 } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
 
-import DrawerHeader from "../../components/DrawerHeader";
-import DrawerFooter from "../../components/DrawerFooter";
+import DrawerHeader from "@components/DrawerHeader";
+import DrawerFooter from "@components/DrawerFooter";
 
 import FrontPage from "./FrontPage";
 import Profile from "./Profile";

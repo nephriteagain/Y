@@ -1,6 +1,6 @@
 import { View, Text, ScrollView } from "react-native"
 import { faker } from "@faker-js/faker"
-import Space from "../../../components/Space"
+import Space from "@components/Space"
 
 const fakeSpaces = Array.from({length:10}, () => {
     return {

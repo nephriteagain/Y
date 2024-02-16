@@ -1,5 +1,5 @@
 import { View, Text } from "react-native"
-import type { Message } from "../types"
+import type { Message } from "@types"
 
 export default function Message({displayName, userName, date, message}: Message) {
     return (

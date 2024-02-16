@@ -1,5 +1,5 @@
 import { View, Text } from "react-native";
-import type { Post } from "../types";
+import type { Post } from "@types";
 
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome5 } from '@expo/vector-icons';

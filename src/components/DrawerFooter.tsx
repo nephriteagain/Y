@@ -6,7 +6,7 @@ import { Feather } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-import { useGlobalStore } from "../hooks/useGlobalStore";
+import { useGlobalStore } from "@hooks/useGlobalStore";
 
 export default function DrawerFooter() {
     const theme = useGlobalStore(s => s.theme)

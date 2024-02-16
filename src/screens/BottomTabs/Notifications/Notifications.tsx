@@ -2,14 +2,9 @@ import { View, Text } from "react-native"
 import { useNavigation, useFocusEffect } from "@react-navigation/native";
 import { Feather } from '@expo/vector-icons';
 import { Link } from "@react-navigation/native";
-import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
-import type { NotificationsTopTabParamList } from "../../../types";
 
-import All from "../../Tabs/All";
-import Verified from "../../Tabs/Verified";
-import Mentions from "../../Tabs/Mentions";
 
-const TopTab = createMaterialTopTabNavigator<NotificationsTopTabParamList>()
+import NotificationsTopTab from "@screens/Tabs/NotificationTopTabs";
 
 export default function Notifications() {
 
@@ -29,27 +24,5 @@ export default function Notifications() {
         })
     })
 
-    return (
-        <TopTab.Navigator
-        screenOptions={{
-            tabBarLabelStyle: {
-                fontWeight: 'bold',
-                fontSize: 14,
-            }
-        }}
-        >
-            <TopTab.Screen
-            name="All"
-            component={All}
-            />
-            <TopTab.Screen
-            name="Verified"
-            component={Verified}
-            />
-            <TopTab.Screen
-            name="Mentions"
-            component={Mentions}
-            />
-        </TopTab.Navigator>
-    )
+    return <NotificationsTopTab />
 }

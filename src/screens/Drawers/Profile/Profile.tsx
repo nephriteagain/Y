@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 
-import ProfileBanner from "../../../components/ProfileBanner";
+import ProfileBanner from "@components/ProfileBanner";
 import ProfileTopTabs from "../../Tabs/ProfileTopTabs";
 
 

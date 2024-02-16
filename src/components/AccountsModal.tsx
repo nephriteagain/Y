@@ -1,6 +1,6 @@
 import { View, Modal, Text, Pressable } from "react-native";
 
-import { useModalStore } from "../hooks/useModalStore";
+import { useModalStore } from "@hooks/useModalStore";
 import { AntDesign } from '@expo/vector-icons';
 
 export default function AccountsModal() {

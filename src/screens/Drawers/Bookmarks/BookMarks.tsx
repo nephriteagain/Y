@@ -1,6 +1,6 @@
 import { ScrollView } from "react-native";
-import SinglePost from "../../../components/Post";
-import type { Post } from "../../../types";
+import SinglePost from "@components/Post";
+import type { Post } from "@types";
 import {faker} from '@faker-js/faker'
 
 
