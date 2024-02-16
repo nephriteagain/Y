@@ -10,7 +10,7 @@ export default function SubscribeModal() {
         <Modal
             transparent={true}
             animationType="slide"
-            visible={!isSubscribeModalShow}
+            visible={isSubscribeModalShow}
         >
             <Pressable onPress={toggleSubscribeModal}>
                 <View className="w-full h-full opacity-60 bg-black" />

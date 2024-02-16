@@ -45,14 +45,15 @@ export default function Drawers() {
     const nav = useNavigation();
 
     return (
-        <Drawer.Navigator
+        <Drawer.Navigator        
             screenOptions={{
+                lazy: true, // lazy load all drawers by default
                 drawerActiveBackgroundColor: "white",
                 drawerLabelStyle: {
                     fontSize: 20,
                     fontWeight: "900",
                 },
-                drawerActiveTintColor: "black",
+                drawerActiveTintColor: "black",                
             }}
             initialRouteName="FrontPage"
             drawerContent={DrawerContent}
@@ -61,6 +62,7 @@ export default function Drawers() {
                 name="FrontPage"
                 component={FrontPage}
                 options={{
+                    lazy: false, // only load frontpage first
                     headerShown: false,
                     // this hides the frontpage from the navbar button
                     drawerLabelStyle: {
@@ -81,7 +83,7 @@ export default function Drawers() {
                         <FontAwesome6 name="user" size={24} color="black" />
                     ),
                     headerShown: false,
-                }}
+                }}                
             />
             <Drawer.Screen
                 name="Premium"

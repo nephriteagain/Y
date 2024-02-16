@@ -18,6 +18,7 @@ export default function BottomTabs() {
     return (
         <BottomTab.Navigator
             screenOptions={{
+                lazy: true, // lazy load not shown screens
                 tabBarShowLabel: false,
                 headerShown: false,
                 tabBarHideOnKeyboard: true,
@@ -27,6 +28,7 @@ export default function BottomTabs() {
                 name="Home"
                 component={Home}
                 options={{
+                    lazy: false, // only home is loaded first
                     tabBarIcon: () => (
                         <MaterialIcons
                             name="home-filled"
