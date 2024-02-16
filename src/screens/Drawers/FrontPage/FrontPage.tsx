@@ -45,7 +45,7 @@ export default function FrontPage() {
                 headerTitle: () => (
                     <View>
                         <Text className="text-lg font-bold">Explore Settings</Text>
-                        <Text className="text-sm opacity-70" >@twitteruser</Text>
+                        <Text className="text-sm opacity-70" >@yuser</Text>
                     </View>
                 )
             }}
@@ -58,7 +58,7 @@ export default function FrontPage() {
                 headerTitle: () => (
                     <View>
                         <Text className="text-lg font-bold">Notifications</Text>
-                        <Text className="text-sm opacity-70" >@twitteruser</Text>
+                        <Text className="text-sm opacity-70" >@yuser</Text>
                     </View>
                 )
             }}
@@ -70,7 +70,7 @@ export default function FrontPage() {
                 headerTitle: () => (
                     <View>
                         <Text className="text-lg font-bold">Messages settings</Text>
-                        <Text className="text-sm opacity-70" >@twitteruser</Text>
+                        <Text className="text-sm opacity-70" >@yuser</Text>
                     </View>
                 )
             }}

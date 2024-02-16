@@ -36,6 +36,14 @@ export type RootParamList = {
     Monetization: undefined;
 }
 
+
+export type ProfileTopTabParamList = {
+    Posts: undefined;
+    Replies: undefined;
+    Highlights: undefined;
+    Media: undefined;
+}
+
 /**@description incomplete */
 export type Post = {
     id: string

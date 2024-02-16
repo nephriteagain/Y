@@ -1,6 +1,5 @@
 import { View, Text, Pressable } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import { faker } from "@faker-js/faker";
 
 import { MaterialIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
@@ -13,8 +12,8 @@ export default function ProfileBanner() {
     const nav = useNavigation()
     
     return (
-        <View>
-            <View className="relative w-full" style={{height: 160}}>
+        <View className="bg-white">
+            <View className="relative w-full" style={{height: 140}}>
                 <View className="absolute top-0 left-0 w-full h-full bg-blue-400" />
                 <View className="flex-row justify-between p-4">
                     <Pressable className="p-1 items-center justify-center bg-blue-800 rounded-full"
@@ -42,17 +41,17 @@ export default function ProfileBanner() {
                     </Pressable>
                 </View>
                 <View>
-                    <Text style={{fontSize:24, fontWeight: 'bold'}}>twitteruser</Text>
-                    <Text className="font-semibold opacity-70" style={{fontSize:16}}>@twitteruser</Text>
+                    <Text style={{fontSize:24, fontWeight: 'bold'}}>yuser</Text>
+                    <Text className="font-semibold opacity-70" style={{fontSize:16}}>@yuser</Text>
                 </View>
                 <View className="flex-row gap-x-3">
                     <View className="flex-row">
                         <Ionicons name="balloon-outline" size={24} color="black" />
-                        <Text className="pl-2">Born {faker.date.birthdate().toDateString().split(' ').splice(1).join(' ')}</Text>
+                        <Text className="pl-2">Born Jan 1, 1997</Text>
                     </View>
                     <View className="flex-row">
                         <Fontisto name="date" size={24} color="black" />
-                        <Text className="pl-2">Joined {faker.date.past({years:8}).toDateString().split(' ').splice(1).join(' ')}</Text>
+                        <Text className="pl-2">Joined Jan 1, 2014</Text>
                     </View>
                 </View>
             </View>

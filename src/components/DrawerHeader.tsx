@@ -21,8 +21,8 @@ export default function DrawerHeader() {
                 <Entypo name="dots-three-vertical" size={16} color="black" />
             </Pressable>
             <View>
-                <Text className='text-lg font-bold'>twitteruser</Text>  
-                <Text className='text-sm opacity-70'>@twitteruser</Text>
+                <Text className='text-lg font-bold'>yuser</Text>  
+                <Text className='text-sm opacity-70'>@yuser</Text>
             </View>
             <View className='flex-row'>
                 <View className='flex-row pr-2 gap-x-1'>
