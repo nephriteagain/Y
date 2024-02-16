@@ -1,2 +1,1 @@
-
-export {default} from './Verified'
+export { default } from "./Verified";

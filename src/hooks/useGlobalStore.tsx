@@ -1,8 +1,8 @@
-import { create } from 'zustand'
+import { create } from "zustand";
 
 type State = {
     drawerIsOpen: boolean;
-    theme: 'day' | 'night';
+    theme: "day" | "night";
 };
 
 type Actions = {
@@ -12,7 +12,8 @@ type Actions = {
 
 export const useGlobalStore = create<State & Actions>((set) => ({
     drawerIsOpen: false,
-    theme: 'day',
+    theme: "day",
     toggleDrawer: () => set((state) => ({ drawerIsOpen: !state.drawerIsOpen })),
-    toggleTheme: () => set((state) => ({ theme: state.theme === 'day' ? 'night' : 'day' })),
+    toggleTheme: () =>
+        set((state) => ({ theme: state.theme === "day" ? "night" : "day" })),
 }));

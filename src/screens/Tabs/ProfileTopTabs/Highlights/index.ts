@@ -1,2 +1,1 @@
-
-export {default} from './ProfileHighlights'
+export { default } from "./ProfileHighlights";

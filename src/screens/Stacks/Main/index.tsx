@@ -1,2 +1,2 @@
-export { default } from "./Main"
-export { mainOptions } from './mainOptions'
+export { default } from "./Main";
+export { mainOptions } from "./mainOptions";

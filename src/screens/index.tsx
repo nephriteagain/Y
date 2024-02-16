@@ -1,5 +1,4 @@
-import { NavigationContainer } from "@react-navigation/native"
-
+import { NavigationContainer } from "@react-navigation/native";
 
 import Drawers from "./Drawers";
 
@@ -8,5 +7,5 @@ export default function Navigator() {
         <NavigationContainer>
             <Drawers />
         </NavigationContainer>
-    )
+    );
 }

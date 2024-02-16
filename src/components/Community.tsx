@@ -1,6 +1,12 @@
 import { View, Text } from "react-native";
 
-export default function Community({communityName, memberTotal}: {communityName: string; memberTotal: number}) {
+export default function Community({
+    communityName,
+    memberTotal,
+}: {
+    communityName: string;
+    memberTotal: number;
+}) {
     return (
         <View className="w-full flex-row gap-x-4 pb-4">
             <View className="basis-1/3">
@@ -8,7 +14,9 @@ export default function Community({communityName, memberTotal}: {communityName: 
             </View>
             <View className="basis-2/3 justify-between">
                 <View>
-                    <Text className="text-lg font-semibold">{communityName}</Text>
+                    <Text className="text-lg font-semibold">
+                        {communityName}
+                    </Text>
                     <Text className="text-gray-500">{memberTotal} Members</Text>
                 </View>
                 <View className="flex-row pb-1 relative">
@@ -20,5 +28,5 @@ export default function Community({communityName, memberTotal}: {communityName: 
                 </View>
             </View>
         </View>
-    )
+    );
 }

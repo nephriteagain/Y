@@ -1,2 +1,1 @@
-
-export {default} from './TimelineSettings'
+export { default } from "./TimelineSettings";

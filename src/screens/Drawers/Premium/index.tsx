@@ -1,2 +1,1 @@
-
-export {default} from "./Premium"
+export { default } from "./Premium";

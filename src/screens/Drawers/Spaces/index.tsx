@@ -1,2 +1,1 @@
-
-export {default} from "./Spaces"
+export { default } from "./Spaces";

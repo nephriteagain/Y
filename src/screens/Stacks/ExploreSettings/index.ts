@@ -1,2 +1,1 @@
-
-export { default } from './ExploreSettings'
+export { default } from "./ExploreSettings";

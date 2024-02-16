@@ -1,2 +1,1 @@
-
-export { default } from './MessagesSettings'
+export { default } from "./MessagesSettings";
