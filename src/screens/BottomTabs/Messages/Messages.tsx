@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native"
+import { View, TextInput, ScrollView } from "react-native"
 import { useNavigation, Link, useFocusEffect } from "@react-navigation/native";
 import { Feather } from '@expo/vector-icons';
 import Message from "../../../components/Message";
@@ -35,10 +35,13 @@ export default function Messages() {
     })
 
     return (
-        <View className="p-4">
-            {fakeMessages.map(m => {
-                return <Message key={m.id} {...m} />
-            })}
+        <View>
+            <ScrollView className="p-4">
+                {fakeMessages.map(m => {
+                    return <Message key={m.id} {...m} />
+                })}
+            </ScrollView>
+            
         </View>
     )
 }

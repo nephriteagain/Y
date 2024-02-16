@@ -165,11 +165,19 @@ export default function Drawers() {
                             <Pressable onPress={() => nav.goBack()}>
                                 <Ionicons name="arrow-back" size={32} color="black" />
                             </Pressable>
-                            <Text className="font-bold" style={{fontSize: 18}}>Monetization</Text>                        
+                            <View>
+                                <Text className="font-bold" style={{fontSize: 18}}>Monetization</Text>                        
+                                <Text className="font-semibold" style={{color: 'gray'}}>@yuser</Text>
+                            </View>
                         </View>
                     )
                 },
-                headerLeft: () => <></> // this removes the hamburger icon
+                headerLeft: () => <></>, // this removes the hamburger icon,
+                headerRight: () => (
+                    <Pressable className="px-2">
+                        <Feather name="info" size={28} color="black" />
+                    </Pressable>
+                )
             }}
             />
         </Drawer.Navigator>
