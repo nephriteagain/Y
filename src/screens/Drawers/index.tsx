@@ -1,4 +1,4 @@
-import { Pressable, Text, View } from "react-native";
+import { Pressable, Text, View, TextInput } from "react-native";
 import { 
     createDrawerNavigator, 
     DrawerContentScrollView, 
@@ -123,11 +123,11 @@ export default function Drawers() {
                 drawerIcon: () => <FontAwesome5 name="list-alt" size={24} color="black" />,
                 headerTitle: () => {
                     return (
-                        <View className="flex-row items-center gap-x-6">
+                        <View className="flex-row items-center gap-x-4">
                             <Pressable onPress={() => nav.goBack()}>
                                 <Ionicons name="arrow-back" size={32} color="black" />
                             </Pressable>
-                            <Text className="font-bold" style={{fontSize: 18}}>Lists</Text>                        
+                            <TextInput placeholder="Search for Lists" className="bg-gray-100 px-4 py-1 rounded-lg" style={{width: 250}} />
                         </View>
                     )
                 },
