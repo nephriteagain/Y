@@ -91,7 +91,7 @@ export default function Drawers() {
                             <Pressable onPress={() => nav.goBack()}>
                                 <Ionicons name="arrow-back" size={32} color="black" />
                             </Pressable>
-                            <Text className="font-bold" style={{fontSize: 18}}>Premium</Text>                        
+                            <Text className="font-bold" style={{fontSize: 18}}>Subscribe</Text>                        
                         </View>
                     )
                 },
